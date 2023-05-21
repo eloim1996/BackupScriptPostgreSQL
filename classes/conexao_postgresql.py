@@ -16,7 +16,7 @@ def conexao_banco():
     menus.menu_bem_vindo.boas_vindas()
 
     global servidor_origem
-    servidor_origem = input("Nome ou ip do servidor origem: ")
+    servidor_origem = 'win-dsp-banco01'#input("Nome ou ip do servidor origem: ")
     while not servidor_origem:
         limpar()
         menus.menu_bem_vindo.boas_vindas()
@@ -24,7 +24,7 @@ def conexao_banco():
         servidor_origem = input("\nNome ou ip do servidor origem: ")
 
     global usuario
-    usuario = input("Nome do usuário: ")
+    usuario = 'postgres'#input("Nome do usuário: ")
     while not usuario:
         limpar()
         menus.menu_bem_vindo.boas_vindas()
@@ -32,7 +32,7 @@ def conexao_banco():
         usuario = input("\nNome do usuário: ")
 
     global senha_usuario
-    senha_usuario = pwinput.pwinput("Insira a senha do usuário: ")
+    senha_usuario = 'abc123!'#pwinput.pwinput("Insira a senha do usuário: ")
     while not senha_usuario:
         limpar()
         menus.menu_bem_vindo.boas_vindas()
