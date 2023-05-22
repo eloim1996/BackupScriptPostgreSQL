@@ -21,7 +21,7 @@ def dump_postgres():
     role = input("Nome da role(OWNER): ").upper()
 
 
-    dumper = f'"{diretorio_bin}\\pg_dump.exe" --host={host} --username "{user}" --role "{role}" --blobs --verbose --file="{diretorio}\\{database_name}_{time}.backup_postgresql" -F c "{database_name}" \n\n ECHO Backup feito com sucesso Verifique o arquivo {database_name}_{time}.backup_postgresql em {diretorio}! \n\n\n pause'
+    dumper = f'"{diretorio_bin}\\pg_dump.exe" --host={host} --username "{user}" --role "{role}" --blobs --verbose --file="{diretorio}\\{database_name}_{time}.backup_postgresql" -F c "{database_name}" \n\nECHO Backup feito com sucesso Verifique o arquivo {database_name}_{time}.backup_postgresql em {diretorio}! \n\n\npause'
 
 
     os.putenv('PGPASSWORD', password)
